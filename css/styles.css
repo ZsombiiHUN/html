@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.stars {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background-size: cover;
+    animation: scrollStars 50s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes scrollStars {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 10000px;}
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.subtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #a0aec0;
+}
+
+.hidden {
+    display: none;
+}
+
+.project-card {
+    background-color: #1a202c;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.project-card .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #2d3748;
+    margin: 10px 0;
+}
+
+.project-card .project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project-card .project-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #a0aec0;
+    margin-bottom: 10px;
+}
+
+.gradient-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background-size: 200% 200%;
+    border-radius: 10px;
+    transition: background-position 1s ease-in-out;
+}
+
+.gradient-button:hover {
+    background-position: 100% 0;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer-content .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .footer-content .social-links a:hover {
+    color: #ff7e5f;
+}
+
+footer .footer-content .contact-info {
+    margin-top: 10px;
+}
+
+footer .footer-content .contact-info p {
+    margin: 5px 0;
+}
+
+footer .text-gray-400 {
+    color: #a0aec0; /* Slightly lighter color for the copyright text */
+}
+
+footer .transition-colors {
+    transition: color 0.3s ease;
+}
